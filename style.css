@@ -1,0 +1,557 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+    text-decoration: none;
+   
+}
+body{
+    overflow-x: hidden;
+}
+
+
+/* w page style  */
+.header{
+    position: fixed;
+    padding: 5px 5px 5px 0;
+    flex-wrap: wrap;
+    flex: 200em;
+    width: 100%;
+    background: rgb(69, 205, 255);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.logo{
+    font-size: 16px;
+    border: 2px solid transparent;
+    background-color: #378CE7;
+    border-radius: 8px;
+    padding: 10px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+.logo:hover{
+    color: orangered;
+    text-shadow: 0 0 25px orangered,
+                 0 0 50px orangered;
+    transform: scale(1,1);
+}
+span{
+    color: orangered;
+}
+.navbar a{
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+ 
+.contact{
+    padding: 10px 28px;
+    background-color: #378CE7;
+    color: white;
+    font-weight: bold;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+.contact:hover{
+    background-color: orangered;
+    box-shadow: 0 0 25px orangered;
+    color: white;
+}
+
+.active{
+    background-color: #378CE7;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+
+}
+.active:hover{
+    background-color: orangered;
+    box-shadow: 0 0 25px orangered;
+    color: white;
+}
+.home{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 30px 12% 0;
+    background-image: url('image/ccc.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.home-content{
+    max-width: 800px;
+}
+.home-content h3{
+    font-size: 42px;
+    color: white;
+}
+.home-content h1{
+    font-size: 42px;
+    line-height: 1.2;
+    
+}
+.home.img-box img{
+    padding-top: 40px;
+    width: 550px;
+    border-image: round;
+   image-resolution: 46px;
+    border-image: 50px;
+    
+   
+}
+/* responisve of home  */
+@media (max-width: 768px) {
+    .home {
+        padding: 20px 5%;
+        flex-direction: column;
+        gap: 3em;
+    }
+
+    .home-content h3, .home-content h1 {
+        font-size: 32px;
+        line-height: 1.1;
+    }
+
+    .home.img-box img {
+        width: 100%;
+        padding-top: 20px;
+    }
+}
+
+
+.contact-form {
+    background-image: url('image/eee.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.contact-form h2{
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 3em;
+    font-size: 38px;
+    padding: 50px 0;
+}
+
+.contact-form form{
+    max-width: 50em;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3em;
+    
+}
+.contact-form .input-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contact-form form .input-box input,
+.contact-form form textarea{
+    width: 100%;
+    padding: 1.5em;
+    font-size: 18px;
+    color: black;
+    background: rgb(241, 241, 241);
+    border-radius: .16rem;
+    border-color: black;
+    margin: 1rem 0;
+    resize: none;
+}
+.btn-2{
+    padding: 15px 28px;
+    background-color: rgb(69, 205, 255);
+    color: white;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+    margin-bottom: 2em;
+} 
+.btn-2:hover{
+    background-color: white;
+    color: orangered;
+}
+ /* responsive of contact form  style  */
+@media (max-width: 768px) {
+    .contact-form h2 {
+        font-size: 28px;
+        padding: 30px 0;
+    }
+
+    .contact-form form {
+        max-width: 90%;
+    }
+
+    .contact-form .input-box {
+        flex-direction: column;
+    }
+
+    .contact-form form .input-box input,
+    .contact-form form textarea {
+        font-size: 16px;
+        padding: 1em;
+    }
+}
+
+
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: gray;
+}
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: white;
+}
+.footer .social a{
+    font-size: 24px;
+    color: white;
+    border: 2px solid orangered;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    box-shadow: inset 0 0 10px orangered,0 0 10px
+     orangered;
+     transition: 0.3s ease;
+}
+.footer .social a:hover{
+    transform: scale(1,1)translateY(-10px);
+    color: orangered;
+    border: 2px solid rgb(8, 5, 4);
+}
+
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+.footer ul li a{
+    color: white;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+.footer ul li a:hover{
+    border-bottom: 3px solid orangered;
+}
+.footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+.footer .copyright{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 12px;
+    color: white;
+}
+/* responsive of footer style  */
+@media (max-width: 768px) {
+    .footer {
+        padding: 20px 0;
+    }
+
+    .footer .social a {
+        font-size: 20px;
+        width: 30px;
+        height: 30px;
+        line-height: 28px;
+        margin: 0 5px;
+    }
+
+    .footer ul {
+        font-size: 16px;
+    }
+
+    .footer ul li {
+        padding: 0 10px;
+    }
+}
+
+
+
+/* aboutme page style */
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12% 8%;
+    gap: 10em;
+    background: black;
+}
+
+.about-img img {
+    position: static;
+    width: 30vw;
+    border-radius: 59%;
+}
+
+.about-content h2 {
+    text-align: left;
+    color: white;
+    font-size: 42px;
+}
+
+.about-content h3 {
+    font-size: 62px;
+    color: white;
+}
+
+.about-content p {
+    color: white;
+    font-size: 20px;
+    margin: 2em 0 3em;
+}
+
+/* Responsive style of about page */
+@media only screen and (max-width: 1200px) {
+    .about {
+        flex-direction: column;
+        gap: 5em;
+        padding: 10% 5%;
+    }
+    
+    .about-img img {
+        width: 50vw;
+    }
+    
+    .about-content h2 {
+        font-size: 36px;
+    }
+    
+    .about-content h3 {
+        font-size: 48px;
+    }
+    
+    .about-content p {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        gap: 2em;
+        padding: 8% 3%;
+    }
+    
+    .about-img img {
+        width: 70vw;
+    }
+    
+    .about-content h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+    
+    .about-content h3 {
+        font-size: 36px;
+        text-align: center;
+    }
+    
+    .about-content p {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .about {
+        padding: 6% 2%;
+    }
+    
+    .about-img img {
+        width: 50vw;
+    }
+    
+    .about-content h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+    
+    .about-content h3 {
+        font-size: 28px;
+        text-align: center;
+    }
+    
+    .about-content p {
+        font-size: 14px;
+    }
+}
+
+
+ /* expriance page style  */
+
+.description{
+    width: 60%;
+    height: 800px;
+    padding: 10px;
+    margin:  0;
+    line-height: 2rem;   
+}
+.all{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 300px;
+    flex-shrink: 0.5em;
+    width: 100%;
+    height: 800px;
+    background-color: #ACE2E1;
+}
+.all img{
+    width: 39%;
+    height: auto;
+}
+.description .describe h3{
+    font-size: 0.5;
+    font-family: sans-serif;
+}
+.description .describe p{
+    font-size: 0.5;
+}
+.describe{
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    width: 40%px;
+}
+.description ul{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 50vh;
+   align-items: start; 
+   
+}
+.description ul li{
+    display: block;
+    width: 500px;
+    font-size: 16px;
+    float: right;
+    text-indent: 140px;
+    
+}
+.contact{
+    margin-left: 10px;
+}
+
+/* Responsive styles of expriance page */
+@media (max-width: 1200px) {
+    .description {
+        width: 70%;
+        height: auto;
+    }
+    .describe {
+        width: 60%;
+        margin: 30px;
+    }
+    .description ul {
+        width: 500px;
+        height: auto;
+    }
+    .description ul li {
+        width: 400px;
+        text-indent: 100px;
+    }
+}
+
+@media (max-width: 992px) {
+    .all {
+        flex-direction: column;
+        height: auto;
+    }
+    .description {
+        width: 80%;
+    }
+    .describe {
+        width: 70%;
+        margin: 20px;
+    }
+    .description ul {
+        width: 400px;
+    }
+    .description ul li {
+        width: 350px;
+        text-indent: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    .description {
+        width: 90%;
+    }
+    .describe {
+        width: 80%;
+        margin: 10px;
+    }
+    .description ul {
+        width: 300px;
+    }
+    .description ul li {
+        width: 250px;
+        text-indent: 60px;
+    }
+    .all img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .description {
+        width: 100%;
+        padding-top: 60px;
+    }
+    .describe {
+        width: 100%;
+        margin: 0;
+    }
+    .description ul {
+        width: 100%;
+    }
+    .description ul li {
+        width: 100%;
+        text-indent: 20px;
+    }
+}
+
+/* scrollbar style  */
+::-webkit-scrollbar{
+    width: 15px;
+   
+}
+::-webkit-scrollbar-thumb{
+    background-image: linear-gradient(180deg, #FFFFFF 0%, #6284FF 50%, #FF0000 100%);
+
+}
+::-webkit-scrollbar-track{
+    background-color: rgba(0, 0, 0,0.6);
+   
+}
